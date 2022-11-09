@@ -1,0 +1,35 @@
+@keyframes move {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(300px);
+    }
+    50% {
+        transform: translate(300px, 300px)
+    }
+    75% {
+        transform: translate(0px, 300px);
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.div-container {
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+}
+
+.div-move {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 10s linear infinite;
+}
